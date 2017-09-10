@@ -15,8 +15,10 @@ public class MagicManNet : ModuleRules
     }
 
     public MagicManNet(TargetInfo Target)
-	{
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "UMG" });
+    {
+        bEnableExceptions = true;
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "UMG" });
 	    PrivateDependencyModuleNames.AddRange(new string[] {"Slate", "SlateCore"});
 
         PublicAdditionalLibraries.Add(ProjectRoot + "/Source/ThirdParty/Libraries/gen_hpack_tables.lib");
