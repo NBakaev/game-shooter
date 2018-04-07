@@ -24,4 +24,6 @@ grpc microservice is https://github.com/biqasoft/auth-microservie
 
 cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -BUILD_DLL=ON -DCMAKE_INSTALL_PREFIX=../../../../install ../..
 
+Before run - move dll files (libprotobuf.dll, zlib.dll) from ThirdParty\Libraries to Binaries\Win64
+
 // based on https://www.youtube.com/watch?v=JCjSyzXv9CQ
