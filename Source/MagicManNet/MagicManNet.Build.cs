@@ -14,7 +14,7 @@ public class MagicManNet : ModuleRules
         }
     }
 
-    public MagicManNet(TargetInfo Target)
+    public MagicManNet(ReadOnlyTargetRules Target) : base(Target)
     {
         bEnableExceptions = true;
 

@@ -5,21 +5,22 @@ using System.Collections.Generic;
 
 public class MagicManNetTarget : TargetRules
 {
-	public MagicManNetTarget(TargetInfo Target)
+	public MagicManNetTarget(TargetInfo Target) : base (Target)
 	{
 		Type = TargetType.Game;
+		ExtraModuleNames.Add("MagicManNet");
 	}
 
 	//
 	// TargetRules interface.
 	//
 
-	public override void SetupBinaries(
-		TargetInfo Target,
-		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-		ref List<string> OutExtraModuleNames
-		)
-	{
-		OutExtraModuleNames.Add("MagicManNet");
-	}
+	// public override void SetupBinaries(
+	// 	TargetInfo Target,
+	// 	ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
+	// 	ref List<string> OutExtraModuleNames
+	// 	)
+	// {
+	// 	OutExtraModuleNames.Add("MagicManNet");
+	// }
 }
